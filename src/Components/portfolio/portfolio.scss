@@ -1,0 +1,93 @@
+@import '../../app.scss';
+
+.Portfolio{
+    position: relative;
+    width: 100%;
+
+    .progress{
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 30px;
+        text-align: center;
+        color: orange;
+        font-size: 36px;
+
+        @include mobile{
+            font-size: 20px;
+        }
+
+        .progressBar{
+            height: 10px;
+            background-color: white;
+
+            @include mobile{
+                height : 5px;
+            }
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .wrapper{
+            width: 1000px;
+            display: flex;
+            gap: 30px;
+
+            @include mobile{
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+    
+
+            .imageContainer{
+                width: 80%;
+                
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+
+            .textContainer{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                @include mobile{
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                h2{
+                    font-size: 40px;
+                }
+
+                p{
+                    color: gray;
+                    font-size: 20px;
+
+                    @include mobile{
+                        text-align: center;
+                    }
+                }
+
+                button{
+                    background-color: orange;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
