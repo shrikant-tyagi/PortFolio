@@ -2,7 +2,7 @@ import { motion, useInView } from '../../../node_modules/framer-motion'
 import './contact.scss'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
-import toast from 'react-hot-toast';
+import toast from '../../../node_modules/react-hot-toast';
 
 const Contact = () => {
 
