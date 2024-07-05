@@ -52,15 +52,15 @@ const Contact = () => {
             <motion.h1  variants={variants}>Let's Work together</motion.h1>
             <motion.div className='item'  variants={variants}>
                 <h2>Mail</h2>
-                <span>hello@react.dev</span>
+                <span>shrikant8885252@gmail.com</span>
             </motion.div>
             <motion.div className='item'  variants={variants}>
                 <h2>Address</h2>
-                <span>Hello street New York</span>
+                <span>Sector-62, Noida, Uttar Pradesh</span>
             </motion.div>
             <motion.div className='item'  variants={variants}>
                 <h2>Phone</h2>
-                <span>+91 23982398</span>
+                <span>+91 9149390042</span>
             </motion.div>
         </motion.div>
         <div className='formContainer'>

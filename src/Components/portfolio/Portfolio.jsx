@@ -5,27 +5,32 @@ import { useRef } from 'react'
 const items = [
     {
         id:1,
-        title:'React Commerce',
-        img:'https://images.pexels.com/photos/18060087/pexels-photo-18060087/free-photo-of-fox-standing-on-pile-of-wood.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
-        desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex dui, maximus vel purus nec, rhoncus laoreet ante.'
+        title:'Real Estate Application',
+        img:'/realEsateaApp.png',
+        desc:'This Real Estate application is a dynamic and interactive web app built using React, SASS, and React Leaflet. This application allows users to explore and find various beautiful locations on map which they want to buy',
+        link:'https://real-estate-application-orcin.vercel.app/'
     },
     {
         id:1,
-        title:'Next.js Commerce',
-        img:'https://images.pexels.com/photos/21771197/pexels-photo-21771197/free-photo-of-old-citroen-2cv-stationne-a-la-place-de-la-concorde-paris-france-antique-d-orange-citroen-2cv-est-une-voiture-produite-francais-construit-de-1948-a-1990-avec-un-regard-non-conventionnel.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
-        desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex dui, maximus vel purus nec, rhoncus laoreet ante.'
+        title:'Shooping Cart App',
+        img:'/shoopingCart.png',
+        desc:'UI showcasing an interactive user interface of an e-commerce website from where we can add items to our cart and checkout from there. This App is build using ReactJs which used frameworks like Redux and Used TailwindCSS for styling.',
+        link:'https://shopping-cart-app-azure.vercel.app/'
+
     },
     {
         id:1,
-        title:'Vanilla JS App',
-        img:'https://images.pexels.com/photos/18676549/pexels-photo-18676549/free-photo-of-couple-riding-horses-on-beach.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
-        desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex dui, maximus vel purus nec, rhoncus laoreet ante.'
+        title:'RazorPay Clone Website',
+        img:'/RazorpayClone.png',
+        desc:'This Project is to showcase my styling skills and my learnings of TailwindCSS, in this project I have used core HTML5 and TailwindCSS for styling. To see Demo, go checkout the below link.',
+        link:'https://razor-pay-clone-khaki.vercel.app/'
     },
     {
         id:1,
-        title:'Music App',
-        img:'https://images.pexels.com/photos/12190795/pexels-photo-12190795.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
-        desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex dui, maximus vel purus nec, rhoncus laoreet ante.'
+        title:'Ed-Tech Platform',
+        img:'/EdTech Platform.png',
+        desc:'This is EdTech Platform website, it is having both frontEnd and Backend functionalities and this is my Major Project. It contains various features like videoPlayers,Payment Integration,Authorization and Authentication of a user. (This project is under Progress)',
+        link:''
     }
 ]
 
@@ -35,18 +40,18 @@ const Single = ({item}) => {
         target : ref,
     })
 
-    const yText = useTransform(scrollYProgress , [0 , 1] , [-100 , 300])
+    const yText = useTransform(scrollYProgress , [0 , 1] , [-100 , 100])
 
     return (
         <section className='container'>
             <motion.div className='wrapper'>
                 <div className='imageContainer' ref={ref}>
-                    <img src={item.img} alt='' />
+                <img src={item.img}  alt='' />
                 </div>
                 <motion.div className='textContainer' style={{y : yText}}>
                     <h2>{item.title}</h2>
                     <p>{item.desc}</p>
-                    <button>See Demo</button>
+                    <button><a href={item.link} target='_blank'>See Demo</a></button>
                 </motion.div>
             </motion.div>
         </section>

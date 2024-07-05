@@ -45,10 +45,10 @@ const Hero = () => {
         <motion.div className='wrapper' variants={textVariants}>
             <motion.div className='textContainer' variants={textVariants}>
                 <motion.h2 variants={textVariants}>Shrikant Tyagi</motion.h2>
-                <motion.h1 variants={textVariants}>Web Developer and ML scientist</motion.h1>
+                <motion.h1 variants={textVariants}>Full-Stack Developer and Problem-Solver</motion.h1>
                 <motion.div className='buttons' variants={textVariants}>
-                    <motion.button variants={textVariants}>See the latest work</motion.button>
-                    <motion.button variants={textVariants}>Contact Me</motion.button>
+                    <motion.button variants={textVariants}><a href='#ortfolio'>See the latest work</a></motion.button>
+                    <motion.button variants={textVariants}><a href='#Contact'>Contact Me</a></motion.button>
                 </motion.div>
                 <motion.img src='scroll.png' alt='' initial={{opacity:1}}
                 animate='scrollButton' variants={textVariants}/>
@@ -59,7 +59,7 @@ const Hero = () => {
             </motion.div>
         </motion.div>
         <div className='imageContainer'>
-            <img src='hero.png' alt=''/>
+            <img src='hero2.jpeg' alt=''/>
         </div>
     </motion.div>
   )

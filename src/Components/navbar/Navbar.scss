@@ -9,13 +9,19 @@
 .wrapper{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 1000px;
     margin: auto;
     align-items: center;
+    padding: 20px;
+
+    .name{
+        @include tablet{
+            margin-left: 100px;
+        }
+    }
 
     @include mobile{
-        justify-content: flex-end;
-        padding: 20px;
+        justify-content: flex-end; 
     }
 }
 
