@@ -1,4 +1,4 @@
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView } from '../../../node_modules/framer-motion'
 import './contact.scss'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';

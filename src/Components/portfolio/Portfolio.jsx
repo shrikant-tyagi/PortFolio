@@ -1,4 +1,4 @@
-import { motion ,useScroll , useSpring, useTransform } from 'framer-motion'
+import { motion ,useScroll , useSpring, useTransform } from '../../../node_modules/framer-motion'
 import './portfolio.scss'
 import { useRef } from 'react'
 

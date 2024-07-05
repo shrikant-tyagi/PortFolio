@@ -1,4 +1,4 @@
-import { animate, motion, useInView } from 'framer-motion'
+import { animate, motion, useInView } from '../../../node_modules/framer-motion'
 import './services.scss'
 import { useRef } from 'react'
 

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars , faXmark} from '@fortawesome/free-solid-svg-icons'
-import { motion } from 'framer-motion'
+import { motion } from '../../../../node_modules/framer-motion'
 
 
 const ToggleButton = ({open , setOpen}) => {

@@ -1,4 +1,4 @@
-import { motion , useScroll , useTransform } from 'framer-motion'
+import { motion , useScroll , useTransform } from '../../../node_modules/framer-motion'
 import './parallax.scss'
 import { useRef } from 'react'
 

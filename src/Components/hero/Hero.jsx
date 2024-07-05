@@ -1,4 +1,4 @@
-import { animate, motion, stagger } from 'framer-motion'
+import { animate, motion, stagger } from '../../../node_modules/framer-motion'
 import './hero.scss'
 
 const textVariants = {

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { motion } from '../../../../node_modules/framer-motion';
 
 const Links = ({open ,setOpen}) => {
 
