@@ -72,6 +72,7 @@ const Portfolio = () => {
     })
 
   return (
+   <>
     <div className='Portfolio' ref={ref}>
         <div className='progress'>
             <h1>Featured Works</h1>
@@ -83,6 +84,7 @@ const Portfolio = () => {
             })
         }
     </div>
+   </>
   )
 }
 

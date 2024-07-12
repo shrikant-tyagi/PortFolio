@@ -4,7 +4,6 @@ const Links = ({open ,setOpen}) => {
 
   const items = [
     "Homepage",
-    "Services",
     "Portfolio",
     "Contact",
     "About"

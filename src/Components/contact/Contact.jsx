@@ -8,10 +8,13 @@ const Contact = () => {
 
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const sendEmail = async(e) => {
     e.preventDefault();
 
-    emailjs
+    const toastId = toast.loading("Sending Email...");
+    console.log(form.current);
+    try {
+       await emailjs
       .sendForm('service_b488v5q', 'template_o7pbubo', form.current, {
         publicKey: 'vmo-SskeahF7T2tvO',
       })
@@ -25,6 +28,11 @@ const Contact = () => {
           toast.error("Unable to send email");
         },
       );
+    } catch (error) {
+        toast.error("Some error occured while sending the email");
+        console.log(error);
+    }
+    toast.dismiss(toastId);
   };
 
     const ref = useRef();
